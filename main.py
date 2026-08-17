@@ -20,3 +20,8 @@ def info():
         "version": "1.0.0",
         "port": 8000,
     }
+
+
+@app.get("/ping")
+def ping():
+    return {"ping": "pong"}
